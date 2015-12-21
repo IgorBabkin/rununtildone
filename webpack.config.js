@@ -1,27 +1,22 @@
+var path = require('path');
+
 module.exports = {
-    entry: './index.ts',
+    entry: './src/index',
     output: {
         filename: 'bundle.js'
     },
     resolve: {
-        extensions: ['', '.ts', '.js']
+        moduleDirectories: ['node_modules'],
+        extensions: ['', '.ts']
     },
     module: {
         loaders: [
             {
                 test: /\.ts$/,
-                exclude: [
-                    /node_modules/,
-                    /typings/
-                ],
-                loaders: ['babel']
-            },
-            {
-                test: /\.ts$/,
-                exclude: /node_modules/,
-                loaders: ['ts']
+                include: path.resolve(__dirname, "src"),
+                loaders: ['babel', 'ts']
             }
         ]
     },
-    watch: true
+    watch: false
 };

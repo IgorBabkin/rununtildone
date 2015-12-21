@@ -1,11 +1,12 @@
 import { EventEmitter2 } from 'eventemitter2';
+import IGenerator from "./IGenerator";
 
 class Job {
     public isRunning: boolean;
     private timeoutId: number;
     private eventEmitter: EventEmitter2;
 
-    constructor(private executeFn: Function, private delayGenerator: any) {
+    constructor(private executeFn: Function, private delayGenerator: IGenerator) {
         this.eventEmitter = new EventEmitter2();
     }
 

@@ -1,7 +1,7 @@
 import Job from './job';
 import DefaultDelayGenerator from './delayGenerator';
 
-var delayGenerator = new DefaultDelayGenerator(5000);
+let delayGenerator = new DefaultDelayGenerator(5000);
 
 let task = () => {
     return new Promise((resolve) => {
