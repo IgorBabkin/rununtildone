@@ -4,6 +4,7 @@
   "description": "Tool for run any function until it return resolved promise",
   "main": "index.js",
   "scripts": {
+    "setup": "npm install && tsd install",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

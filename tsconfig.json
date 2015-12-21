@@ -6,7 +6,7 @@
     "moduleResolution": "node"
   },
   "files": [
-    "./typings/tsd.d.ts"
+    "./typings/eventemitter2/eventemitter2.d.ts"
   ],
   "exclude": [
     "node_modules"
