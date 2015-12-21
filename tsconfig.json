@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "sourceMap": true,
+    "module": "commonjs",
+    "moduleResolution": "node"
+  },
+  "files": [
+    "./typings/tsd.d.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
