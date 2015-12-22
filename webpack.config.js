@@ -1,14 +1,20 @@
 var path = require('path');
 
 module.exports = {
-    entry: './src/index',
+    context: __dirname + '/src',
+
+    entry: './index',
+
     output: {
+        path: __dirname + '/dist',
         filename: 'bundle.js'
     },
+
     resolve: {
         moduleDirectories: ['node_modules'],
         extensions: ['', '.ts']
     },
+
     module: {
         loaders: [
             {
@@ -18,5 +24,6 @@ module.exports = {
             }
         ]
     },
+
     watch: false
 };

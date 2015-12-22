@@ -51,11 +51,11 @@ class Job {
     private retry(): void {
         this.emit('retry');
         let delay = this.delayGenerator.next();
-        this.runDefer(delay);
+        this.timeoutId = this.runDefer(delay);
     }
 
-    private runDefer(delay: number): void {
-        this.timeoutId = setTimeout(this.run, delay);
+    private runDefer(delay: number): number {
+        return setTimeout(this.run, delay);
     }
 
     private execute(): Promise<any> {
