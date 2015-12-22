@@ -1,5 +1,3 @@
-var path = require('path');
-
 module.exports = {
     context: __dirname + '/src',
 
@@ -19,7 +17,7 @@ module.exports = {
         loaders: [
             {
                 test: /\.ts$/,
-                include: path.resolve(__dirname, "src"),
+                include: __dirname + "/src",
                 loaders: ['babel', 'ts']
             }
         ]
