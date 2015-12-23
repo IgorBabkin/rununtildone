@@ -2,10 +2,10 @@
   "name": "rununtildone",
   "version": "0.1.0",
   "description": "Tool for run any function until it return resolved promise",
-  "main": "index.js",
+  "main": "",
   "scripts": {
     "setup": "npm install && tsd install",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test/*"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,8 @@
     "babel-core": "^6.3.21",
     "babel-loader": "^6.2.0",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.3.16",
+    "chai": "^3.4.1",
+    "mocha": "^2.3.4",
     "ts-loader": "^0.7.2",
     "typescript": "^1.7.5",
     "webpack": "^1.12.9"
