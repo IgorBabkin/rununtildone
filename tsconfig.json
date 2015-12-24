@@ -1,13 +1,9 @@
 {
   "compilerOptions": {
     "target": "es6",
-    "sourceMap": true,
     "module": "commonjs",
-    "moduleResolution": "node"
+    "watch": true
   },
-  "files": [
-    "./typings/eventemitter2/eventemitter2.d.ts"
-  ],
   "exclude": [
     "node_modules"
   ]

@@ -1,4 +1,4 @@
 .idea
-bundle.js
+*.js
 node_modules
 typings

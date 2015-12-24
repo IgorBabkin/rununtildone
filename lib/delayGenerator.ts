@@ -1,3 +1,5 @@
+"use strict";
+
 import IGenerator from './IGenerator';
 
 class DefaultDelayGenerator implements IGenerator {

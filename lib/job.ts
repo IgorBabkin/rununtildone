@@ -1,3 +1,5 @@
+"use strict";
+
 import { EventEmitter2 } from 'eventemitter2';
 import IGenerator from "./IGenerator";
 
